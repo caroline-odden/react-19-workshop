@@ -5,7 +5,7 @@ function increment(previousState: number) {
 }
 
 /**
- * 🏆 Erstatt useState med useActionState, den kan ta inn increment som første parameter og en default verdi som er .
+ * 🏆 Erstatt useState med useActionState, den kan ta inn increment som første parameter og en default verdi som er 0.
  * 🏆 Hent verdien og formAction som useActionState-hooken returnerer
  * 🏆 Fjern bruken av onClick og få knappen til å reagere på formAction du får tilbake fra hook'en. 
  * 🔗 https://react.dev/reference/react/useActionState
