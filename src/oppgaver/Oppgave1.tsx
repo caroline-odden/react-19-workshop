@@ -5,9 +5,10 @@ function increment(previousState: number) {
 }
 
 /**
- * 1. Erstatt bruken av useEffect med useActionState
- *  a) Send inn funksjon og default verdi til useActionState og hent verdien og formAction den returnerer.
- *  b) Fjern bruken av onClick og få knappen til å reagere på formAction du får tilbake fra hook'en. 
+ * 🏆 Erstatt useState med useActionState, den kan ta inn increment som første parameter og en default verdi som er .
+ * 🏆 Hent verdien og formAction som useActionState-hooken returnerer
+ * 🏆 Fjern bruken av onClick og få knappen til å reagere på formAction du får tilbake fra hook'en. 
+ * 🔗 https://react.dev/reference/react/useActionState
  */
 
 export function Oppgave1() {

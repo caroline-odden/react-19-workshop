@@ -1,6 +1,6 @@
 /**
- * Les docs, implementer Server komponenter 8-)
- * https://react.dev/reference/rsc/server-components
+ * 🏆 Les docs, implementer Server komponenter 8-)
+ * 🔗 https://react.dev/reference/rsc/server-components
  */
 
 export function Oppgave5() {

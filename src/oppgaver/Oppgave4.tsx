@@ -18,14 +18,15 @@ export function Oppgave4() {
 }
 
 /**
- * I stedet for å hente users med Tanstack win useQuery, hent heller dataen ved 
+ * 🏆 I stedet for å hente users med Tanstack win useQuery, hent heller dataen ved 
  * å bruke det nye API'et "use" fra React. Erstatt bruken inni komponenten.
- * 
- * Hvis du ser i konsollen på nettsiden nå ser du at du får en warning siden
- * promises lagd på klient-siden ikke er støtta av React ennå.
- * Som et midlertidig hack, lag promiset utenfor komponenten i stedet og 
- * bruk den i use i stedet.
- * const usersPromise = getUsers
+ * 💡 Hvis du ser i konsollen på nettsiden nå ser du at du får en warning siden
+ * promises lagd på klient-siden ikke er støtta av React ennå, vi må egentlig bruke et 
+ * rammeverk som lar oss cache promises.
+ * 🏆 Som et midlertidig hack, lag promiset utenfor komponenten i stedet og 
+ * bruk den i use-apiet i stedet.
+ * 💡 const usersPromise = getUsers()
+ * 🔗 https://react.dev/reference/react/use
  */
 function MyComponent() {
 	const { data: users = [] } = useQuery({
@@ -47,10 +48,10 @@ interface UserProps {
 }
 
 /**
- * Vi trenger bare theme-verdien dersom user.id er 1337. Flytt henting av contexten inn i if'en.
+ * 🏆 Vi trenger bare theme-verdien dersom user.id er 1337. Flytt henting av contexten inn i if'en.
  * Du vil (forhåpentligvis) få en typefeil her.
- * Erstatt useContext med use
- * https://react.dev/reference/react/use
+ * 🏆 Erstatt useContext med use i steder for å hente theme conditionally
+ * 🔗 https://react.dev/reference/react/use
  */
 
 function User({user}: UserProps) {

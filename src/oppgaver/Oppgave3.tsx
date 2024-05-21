@@ -4,14 +4,16 @@ import { Todo } from "../types";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 /**
- * Importer useOptimistic og send inn todos som default verdi, og en funksjon som
- * optimistisk legger til den nye todoen i lista, hvor du også legger til "pending" i det nye todo-objektet.
- * Gjør endringer i submit-funksjonen slik at den tar i mot formData, henter verdien fra input-feltet, og bruker
- * den optimistiske funksjonen du får fra useOptimistic.
- * Vis de optimistiske todo'ene i UI'et i stedet for todoene som tanstack henter. 
- * Husk å gjør nødvendige endringer for form og input elementene for å trigge actionen og hente ut nødvendig data.
- * https://react.dev/reference/react/useOptimistic
+ * 🏆 Fjern useState og bruk useOptimistic og send inn todos som første paramater som er default verdi,
+ * og en funksjon som optimistisk legger til den nye todoen i lista, hvor du også legger til "pending"
+ * i det nye todo-objektet, som andre parameter.
+ * 🏆 Gjør endringer i submit-funksjonen slik at den tar i mot formData for å hente verdien fra input-feltet, og bruk
+ * den optimistiske funksjonen du får fra useOptimistic for å legge til en todo.
+ * 🏆 Vis de optimistiske todo'ene i UI'et i stedet for todoene som tanstack henter. 
+ * 💡 Husk å gjør nødvendige endringer for form og input elementene for å trigge actionen og hente ut nødvendig data.
+ * 🔗 https://react.dev/reference/react/useOptimistic
  */
+
 export function Oppgave3() {
   const [newTodo, setNewTodo] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
