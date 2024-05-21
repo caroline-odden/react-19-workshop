@@ -22,4 +22,4 @@ npm start
 
 ## Oppgaver
 
-Oppgavene finner du på nettsiden (localhost:5173)
+Nettsiden er på localhost:5173 og ppgavene finner under `src/oppgaver`

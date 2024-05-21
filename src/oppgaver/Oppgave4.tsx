@@ -17,6 +17,16 @@ export function Oppgave4() {
 	);	
 }
 
+/**
+ * I stedet for å hente users med Tanstack win useQuery, hent heller dataen ved 
+ * å bruke det nye API'et "use" fra React. Erstatt bruken inni komponenten.
+ * 
+ * Hvis du ser i konsollen på nettsiden nå ser du at du får en warning siden
+ * promises lagd på klient-siden ikke er støtta av React ennå.
+ * Som et midlertidig hack, lag promiset utenfor komponenten i stedet og 
+ * bruk den i use i stedet.
+ * const usersPromise = getUsers
+ */
 function MyComponent() {
 	const { data: users = [] } = useQuery({
 		queryKey: ['users'],
@@ -38,7 +48,7 @@ interface UserProps {
 
 /**
  * Vi trenger bare theme-verdien dersom user.id er 1337. Flytt henting av contexten inn i if'en.
- * Du vil (forhåpentligvis) få en typefeil her
+ * Du vil (forhåpentligvis) få en typefeil her.
  * Erstatt useContext med use
  * https://react.dev/reference/react/use
  */

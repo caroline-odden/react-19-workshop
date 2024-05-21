@@ -5,9 +5,9 @@ function increment(previousState: number) {
 }
 
 /**
- * 1. Erstatt bruken av useEffect med useActionState 
- *  a) Hent verdi og formAction fra useActionState
- *  b) Få formet til å trigge formAction uten å bruke onClick
+ * 1. Erstatt bruken av useEffect med useActionState
+ *  a) Send inn funksjon og default verdi til useActionState og hent verdien og formAction den returnerer.
+ *  b) Fjern bruken av onClick og få knappen til å reagere på formAction du får tilbake fra hook'en. 
  */
 
 export function Oppgave1() {
