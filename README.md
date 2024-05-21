@@ -3,7 +3,7 @@
 ## Kom igang
 
 ```
-npm install
+npm install --force
 npm start
 ```
 
@@ -22,4 +22,4 @@ npm start
 
 ## Oppgaver
 
-Nettsiden er på localhost:5173 og ppgavene finner under `src/oppgaver`
+🏆 Nettsiden finner du på localhost:5173 etter å ha starta serveren og oppgavene finner du under `src/oppgaver`
