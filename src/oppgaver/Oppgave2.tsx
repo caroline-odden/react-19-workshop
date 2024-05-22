@@ -3,12 +3,15 @@ import { useState, MouseEvent } from "react";
 
 /**
  * a)
- * 🏆 Erstatt useState med useActionState, den kan ta inn en funksjon som heter addText og default verdien kan være undefined.
- * Lag en funksjon som heter addText som kan ta inn en previousState og en formData som parametre.
- * 🏆 Bruk formData til å hente ut verdien som er i tekstfeltet, husk å legg til "name"-propen på input-elementet,
- * og la addText-funksjonen returnere ned nye meldingen og legg til teksten "added" på slutten som skal vises i nettsiden.
+ * 🏆 Lag en funksjon som heter addText uten for komponenten, den trenger ikke gjøre så mye enda.
+ * 🏆 Erstatt useState med useActionState, den kan ta inn addText-funksjonen og undefined som er default verdien.
+ * 🏆 Gjør om addText til å ta inn previousState og formData som parametre.
+ * 🏆 legg til "name"-prop'en på input elementet og gi den en passende verdi.
+ * 🏆 I addText, bruk formData til å hente ut verdien som er i tekstfeltet, og la addText-funksjonen
+ * returnere ned nye meldingen og legg til teksten "added" på slutten som skal vises i nettsiden.
  * 💡 Husk å gjør nødvendige endringer på form og input-felt for å få useActionState til å funke,
  * og fjern onClick-funksjonen på knappen.
+ * 
  * 🔗 https://react.dev/reference/react/useActionState
  * 
  * 🤔 Bonus: har du fått typet alt riktig?
