@@ -6,7 +6,7 @@ function increment(previousState: number) {
 
 /**
  * 🏆 Erstatt useState med useActionState, den kan ta inn increment-funksjonen
- * som første parameter og en default verdi som er 0.
+ * som første argument og en default verdi som er 0.
  * 🏆 Hent verdien og formAction som useActionState-hooken returnerer
  * 🏆 Fjern bruken av onClick og få knappen til å reagere trigge increment funksjonen
  * ved å bruke formAction du fikk tilbake fra hook'en. 
