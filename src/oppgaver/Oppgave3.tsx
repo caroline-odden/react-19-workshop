@@ -6,7 +6,8 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 /**
  * 🏆 Bruk useOptimistic-hook'en i stedet for useState-hook'en, du kan sende inn todos som første argument 
  * som er default verdien, og som andre argument kan du sende inn en funksjon som optimistisk legger til den
- * nye todoen i lista, hvor du også legger til "pending: true" i det nye todo-objektet.
+ * nye todoen i lista.
+ * 🏆 Legg også til "pending: true" i det nye todo-objektet du optimistisk legger til.
  * 🏆 Gjør endringer i submit-funksjonen slik at den tar i mot formData som argument, slik at du kan hente verdien
  * fra input-feltet, og bruk den optimistiske funksjonen du får fra useOptimistic for å legge til en todo før
  * du gjør det faktiske api-kallet.
